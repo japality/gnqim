@@ -1,0 +1,19 @@
+# Build artifacts
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test images (large)
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tiff

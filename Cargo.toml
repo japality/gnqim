@@ -1,0 +1,25 @@
+[package]
+name = "gnqim"
+version = "0.1.0"
+edition = "2021"
+description = "GN-QIM: Sublinear Power-Law QIM for JPEG-Robust Digital Watermarking"
+license = "GPL-3.0-only"
+readme = "README.md"
+keywords = ["watermarking", "steganography", "dct", "jpeg", "qim"]
+repository = "https://github.com/japality/gnqim"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+image = "0.25"
+
+[lib]
+name = "gnqim_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gnqim"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
